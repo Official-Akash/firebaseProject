@@ -10,8 +10,8 @@
 * create an email and send it to the user email id.
     
 ## 3. Following are some requirements for setting up project:
-* node must be installed in your system
-* when node is installed, install birebase
+* node must be installed in your system. Node can be installed from [nodejs.org](https://nodejs.org/)
+* when node is installed, install firebase using command prompt or terminal
 * firebase can be install by
 ```
 npm install --save firebase
@@ -21,9 +21,9 @@ npm install --save firebase
 * go to downloaded or clonned project folder in command prompt or terminal
 * type following and hit enter
 ```
-node index
+node index.js
 ```
-* go to browser and type following & you are good to go.
+* go to browser, type following & you are good to go.
 ```
 localhost:3000
 ```
