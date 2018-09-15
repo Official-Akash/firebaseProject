@@ -14,22 +14,20 @@
 * when node is installed, install birebase
 * firebase can be install by
 ```
-"npm install --save firebase"
+npm install --save firebase
 ```
 **Now open command prompt or terminal in you system and do following:**
 * download this project zip or git clone this repo
 * go to downloaded or clonned project folder in command prompt or terminal
-* type
+* type following and hit enter
 ```
-"node index"
+node index
 ```
-and hit enter
-* go to browser and enter
+* go to browser and type following & you are good to go.
 ```
-"localhost:3000"
+localhost:3000
 ```
-and there you go.
-		
+
 ### Note: Internet is must
 
 ## License
