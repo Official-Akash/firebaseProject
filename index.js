@@ -73,14 +73,14 @@ app.post('/gonow', (req, res) => {
 			userInformationRef = db.ref('/userInformation/'+usersCount);
 
 			usersRef.set({
-				user_name: unescape(POST.kname),
+				user_name: unescape(POST.kname).replace("+"," "),
 				user_email: unescape(POST.maile)
 			}, function(error) {
 				if (error) {
 					alert("Data could not be saved." + error);
 				} else {
 					userInformationRef.set({
-						user_name: unescape(POST.kname),
+						user_name: unescape(POST.kname).replace("+"," "),
 						user_email: unescape(POST.maile)
 					}, function(error2){
 						if(error2){
@@ -91,10 +91,10 @@ app.post('/gonow', (req, res) => {
 								 to: unescape(POST.maile),
 								 subject: "Welcome User",
 								 generateTextFromHTML: true,
-								 html: "<em>Dear "+unescape(POST.kname)+", Welcome to our app<em>"
+								 html: "<em>Dear "+unescape(POST.kname).replace("+"," ")+", Welcome to our app<em>"
 							};
 							smtpTransport.sendMail(mailOptions, (error, response) => {
-								 error ? res.send(error) : res.send("Welcome "+unescape(POST.kname));
+								 error ? res.send(error) : res.send("Welcome "+unescape(POST.kname).replace("+"," "));
 								 smtpTransport.close();
 							});
 						}
