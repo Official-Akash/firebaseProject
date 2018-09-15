@@ -11,7 +11,10 @@
     
 3. Following are some requirements for setting up project:
   a. node must be installed in your system
-  b. when node is installed, open command prompt or terminal in you system and do following:
+  b. when node is installed, install birebase
+  c. firebase can be install by 
+      "npm install --save firebase"
+  d.now open command prompt or terminal in you system and do following:
     i.    download this project zip or git clone this repo
     ii.   go to downloaded or clonned project folder in command prompt or terminal
     iii.  type "node index" and hit enter
