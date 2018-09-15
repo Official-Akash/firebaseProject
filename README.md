@@ -29,3 +29,9 @@
 		"localhost:3000"
 		```
 		and there you go.
+		
+###Note: Internet is must
+
+## License
+
+This project is licensed under the GNU GPL v3 License - see the [LICENSE.md](LICENSE.md) file for details
